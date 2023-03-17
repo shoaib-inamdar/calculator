@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="icon" id="icon">
+        <button>
+            Dark-mode
+        </button>
+    </div>
+    <h1>CALCULATOR</h1>
+    <div class="main">
+        <div class="cal">
+            <div class="box">
+                <div class="display">
+                    <input type="text" name="screen" id="screen">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <button class="button">C</button>
+                        <button class="button">()</button>
+                        <button class="button">%</button>
+                        <button class="button">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                        <button class="button">9</button>
+                        <button class="button">*</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">1/</button>
+                        <button class="button">0</button>
+                        <button class="button">.</button>
+                        <button class="button">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="media">
+            <b>
+                YOU CAN CONTACT ME HERE
+            </b>
+            <ul class="social">
+                <a href="https://github.com/shoaib-inamdar" target="-blank"><i class="fab fa-github"></i></a>
+                <a href="https://in.linkedin.com/in/shoaib-inamdar-0416a5263" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/shoaibinamdar14?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+<script src="cal.js"></script>
+
+</html>
